@@ -13,3 +13,95 @@
  *= require_tree .
  *= require_self
  */
+
+h2 {
+  font-family: "Roboto Slab";
+  font-weight: 400;
+}
+
+.article-link {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+article {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 120%;
+}
+
+.navbar {
+  border-color: #e7e7e7;
+  background-color: #f8f8f8;
+  padding-left: 15px;
+  padding-right: 15px
+}
+
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-styling {
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #777;
+}
+
+.navbar-add {
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #777;
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+}
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+}
+}
+
+@media (min-width: 768px) {
+  .container {
+      width: 750px;
+  }
+}
+
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+body{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #333333;
+}

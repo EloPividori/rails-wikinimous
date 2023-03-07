@@ -1,11 +1,27 @@
-<h2><%= @article.title %></h2>
+<nav class="navbar">
+  <a class="navbar-brand header-styling" href="/articles">Wikinomous</a>
+  <%= link_to('New Article', new_article_path, class: "navbar-add") %>
+</nav>
 
+<div class="container">
+
+<div class="row justify-content-center">
+<div class="col-sm-8 col-sm-offset-2">
+
+<div class="d-flex">
+<h2><%= @article.title %></h2>
+<small>
+<%= link_to('Edit Article', edit_article_path) %>
+<i class="fa fa-pencil"></i>
+<%= link_to "Delete", article_path(@article), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+<i class="fa fa-trash-o"></i>
+</small>
+</div>
 <p><%= @article.content %></p>
 
-<%= link_to('New Article', new_article_path) %>
-
-<%= link_to('Edit Article', edit_article_path) %>
-
-<%= link_to "Delete", article_path(@article), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
 
 <%= link_to('Back', articles_path) %>
+</div>
+</div>
+
+</div>

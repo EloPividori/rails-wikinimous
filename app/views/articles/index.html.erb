@@ -1,10 +1,17 @@
-<h1>Wikinomous</h1>
+<nav class="navbar">
+  <a class="navbar-brand header-styling" href="/articles">Wikinomous</a>
+  <%= link_to('New Article', new_article_path, class: "navbar-add") %>
+</nav>
 
+<div class="container">
+
+<div class="row justify-content-center">
+<div class="col-sm-8 col-sm-offset-2">
 <ul>
   <% @articles.each do |article| %>
-  <h2><%= link_to(article.title, article_path(article)) %></h2>
+  <h2><%= link_to(article.title, article_path(article), class: "article-link") %></h2>
   <p><%= article.content %></p>
   <% end %>
 </ul>
-
-<%= link_to('New Article', new_article_path) %>
+</div>
+</div>
